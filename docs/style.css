@@ -30,6 +30,11 @@ body::before {
 align-items: center;
 }
 
+.y-mandatory {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 150px;
+}
+
 header {
   position: fixed;
   display: flex;
