@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*outline: 1px solid red;*/
+  /* outline: 1px solid red; */
   top: 0;
 }
 
@@ -26,14 +26,10 @@ body::before {
 }
 /*Copied from Survey Form example by @lasjorg*/
 
-#page-wrapper {
-align-items: center;
-}
-
-.y-mandatory {
+/* .y-mandatory {
   scroll-snap-type: y mandatory;
   scroll-padding-top: 150px;
-}
+} */
 
 header {
   position: fixed;
@@ -77,10 +73,10 @@ li {
 
 .sections {
   margin: 110px 12% 60px 12%;
-  max-width: 75%%;
+  max-width: 75%;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   background-color: #A9A9A9;
@@ -111,8 +107,10 @@ li {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  max-width: 75%;
+  min-width: 45ch;
   padding: 50px 0 0 0;
-  margin: 0px 12% 60px 12%;
+  margin-bottom: 15px;
 }
 
 .about > * {
@@ -121,11 +119,11 @@ li {
 
 .about > p {
   padding: 25px;
-  max-width: 50%;
+  max-width: 75%;
 }
 
 .connect {
-  max-width: 33%;
+  max-width: 75%;
   padding: 15px;
   display: flex;
   margin: 0px 12% 60px 12%;
@@ -185,6 +183,18 @@ li {
   margin: 0px 12% 60px 12%;
 }
 
+@media (min-width: 400px) {
+  .vid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vid-descript {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .vid > * {
   display: flex;
   max-width: 75%;
@@ -196,6 +206,9 @@ li {
   text-align: center;
 }
 
+.vid-descript > a {
+  line-height: 1.4
+}
 .vid-descript > p {
   padding: 25px;
 }
@@ -212,7 +225,6 @@ li {
 
 @media (max-width: 320px) {
   nav {
-    margin-top: 10px;
     width: 100%
     display: flex;
     flex-direction: column;
@@ -224,7 +236,6 @@ li {
 
 @media (max-width: 650px) {
   .logo {
-    margin-top: 15px;
     width: 100%;
     position: relative;
 
