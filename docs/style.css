@@ -7,8 +7,8 @@
 }
 
 html {
-  scroll-type: smooth;
-  scroll-padidng-top: 100px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 /*Copied from Survey Form example by @lasjorg*/
