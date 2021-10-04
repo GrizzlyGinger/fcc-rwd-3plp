@@ -6,6 +6,11 @@
   top: 0;
 }
 
+html {
+  scroll-type: smooth;
+  scroll-padidng-top: 100px;
+}
+
 /*Copied from Survey Form example by @lasjorg*/
 body::before {
   content:'';
