@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   top: 0;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 90px;
+  font-family: "Trebuchet MS";
 }
 
 /*Copied from Survey Form example by @lasjorg*/
@@ -20,11 +21,7 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-image: linear-gradient(
-  90deg,
-      rgba(211,211,211, 0.8),
-      rgba(0,0,0, 0.7)
-  ), url(https://d3wo5wojvuv7l.cloudfront.net/t_square_limited_720/images.spreaker.com/original/5448ea59e8628249495a7afe7e96b707.jpg);
+  background-image: url(https://d3wo5wojvuv7l.cloudfront.net/t_square_limited_720/images.spreaker.com/original/5448ea59e8628249495a7afe7e96b707.jpg);
   background-size: 200px 200px;
   background-repeat: tile;
   background-position: center;
@@ -63,6 +60,11 @@ li {
   padding: 0;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   width: 60%;
 }
@@ -71,6 +73,7 @@ li {
   width: 100%;
   height: 100%;
   max-width: 300px;
+  min-width: 50%;
   display: flex;
   justify-content: center;
 
@@ -78,7 +81,8 @@ li {
 
 .sections {
   margin: 110px 12% 60px 12%;
-  max-width: 75%;
+  padding-top: 15px;
+  max-width: 600px;
   min-width: 400px;
   display: flex;
   flex-direction: column;
@@ -114,7 +118,7 @@ li {
   align-items: center;
   max-width: 75%;
   min-width: 45ch;
-  padding: 50px 0 0 0;
+  padding: 15px;;
   margin-bottom: 15px;
 }
 
@@ -124,33 +128,24 @@ li {
 
 .about > p {
   padding: 25px;
-  max-width: 75%;
+  max-width: 90%;
 }
 
 .connect {
   max-width: 75%;
   padding: 15px;
   display: flex;
-  margin: 0px 12% 60px 12%;
+  margin: 0px 12% 15px 12%;
+  padding: 10px;
+  align-items: center;
 }
 
-.form {
+.social_button {
   max-width: 75%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin: 0px 12% 60px 12%;
-}
-
-.form > * {
-  display: flex;
-  flex-direction: column;
-  min-width: 50%;
-  align-items: left;
 }
 
 .form-descript {
-  max-width: 15%;
+  max-width: 95%;
   margin: 15px;
   flex-direction: column;
   text-align: center;
@@ -160,22 +155,46 @@ li {
   padding: 25px;
 }
 
+.form-container {
+  max-width: 75%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 12% 15px 12%;
+  padding: 15px;
+}
+
+.form-container > * {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  align-items: left;
+}
+
+#form {
+  min-width: 95%;
+  max-width: 95%;
+}
+
 #email {
-  max-width: 35%;
+  max-width: 75%;
+  min-width: 15ch;
   margin-left: 15px;
   margin-top: 10px;
   border-radius: 3px;
 }
 
 #feedback {
-  min-height: 100px;
-  max-width: 75%;
+  min-height: 200px;
+  max-width: 80%;
   margin: 15px 15px;
   border-radius: 10px;
 }
 
 #submit {
-  max-width: 15%;
+  max-width: 50%;
   margin: 0 0 15px 15px;
   border-radius: 10px;
 }
@@ -185,7 +204,8 @@ li {
   text-align: center;
   display: flex;
   justify-content: center;
-  margin: 0px 12% 60px 12%;
+  margin: 0px 12% 25px 12%;
+  padding-bottom: 15px;
 }
 
 @media (min-width: 400px) {
