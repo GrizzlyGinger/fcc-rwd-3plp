@@ -73,9 +73,17 @@ p {
   min-width: 300px;
 }
 
+.nav-link {
+  text-decoration: none;
+	font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: rgb(70, 77, 65);
+}
+
 .section-links {
   align-self: center;
-  text-decoration: none;
+
 }
 
 .container {
