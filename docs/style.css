@@ -70,12 +70,11 @@ p {
 .header-link {
   display: flex;
   justify-content: center;
+  width: 60%;
 }
 
 .header-link > img {
-  width: 90%;
-  max-width: 450px;
-  margin: 15px 0;
+  margin-bottom: 5px;
 }
 
 .nav-link {
