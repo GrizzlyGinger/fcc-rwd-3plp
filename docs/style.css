@@ -42,7 +42,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
 }
 
 nav > ul {
@@ -116,10 +115,6 @@ p {
   text-align: center;
   background-color: rgb(109, 119, 119, 0.8);
   border-radius: 10px;
-}
-
-.sections > p {
-  max-with: 75%
 }
 
 .sections > * {
@@ -196,12 +191,10 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 50%;
-  align-items: left;
 }
 
 #form {
   min-width: 95%;
-  max-width: 95%;
 }
 
 #email {
@@ -221,7 +214,6 @@ p {
   border: 3px solid rgb(228, 159, 124);
   border-radius: 5px;
   background-color: rgb(202,223,214);
-  font-color: white;
 ;
 }
 
@@ -290,7 +282,7 @@ p {
 
 @media (max-width: 320px) {
   nav {
-    width: 100%
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -303,6 +295,5 @@ p {
   .logo {
     width: 100%;
     position: relative;
-
   }
 }
